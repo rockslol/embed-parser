@@ -12,7 +12,7 @@ A very simple embed parser for Discord bots written in Python.
 ## Quick example
 
 ```py
-from helpers.functions.embed_parser_simple import parse_embed_script
+from functions.embed_parser import parse_embed_script
 
 script = "{embed}$v{title: Welcome}$v{description: Hello {user.mention}}"
 content, embed, views = await parse_embed_script(script, ctx)
